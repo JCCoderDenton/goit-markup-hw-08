@@ -1,0 +1,21 @@
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.02em;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  
+  .logo:before {
+    content: "Web";
+    font-size: 26px;
+    color: var(--main-color);
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  
