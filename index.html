@@ -58,13 +58,39 @@
           </svg>
         </button>
       </div>
+      <div js-menu-container class="menu-mobile">
+        <button js-close-menu class="menu-mobile__button-close">
+          <svg class="input-icon icon-user">
+            <use href="images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="menu-mobile__nav">
+          <li><a href="index.html">Студія</a></li>
+          <li><a href="portfolio.html">Портфоліо</a></li>
+          <li><a href="">Контакти</a></li>
+        </ul>
+        <ul class="menu-mobile__contact">
+          <li><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-mobile__social">
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">LinkedIn</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="center">
         <div class="container center__image flex-column-center">
           <h1 class="center__title">Ефективні рішення для вашого бізнесу</h1>
           <button
-            data-modal-open
+          js-open-menu
             id="modal-button"
             class="center-button"
             type="button"
@@ -73,35 +99,9 @@
           </button>
         </div>
         <!--Modal-->
-        <div js-menu-container class="menu-mobile">
-          <button js-close-menu class="menu-mobile__button-close">
-            <svg class="input-icon icon-user">
-              <use href="images/icons.svg#icon-close-black"></use>
-            </svg>
-          </button>
-          <ul class="menu-mobile__nav">
-            <li><a href="index.html">Студія</a></li>
-            <li><a href="portfolio.html">Портфоліо</a></li>
-            <li><a href="">Контакти</a></li>
-          </ul>
-          <ul class="menu-mobile__contact">
-            <li><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="mail"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="menu-mobile__social">
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">LinkedIn</a></li>
-          </ul>
-        </div>
-        <div class="center-overlay" data-modal>
+        <div class="center-overlay" js-menu-container>
           <div class="center-overlay__popup">
-            <button data-modal-close class="center-overlay-close">
+            <button js-close-menu class="center-overlay-close">
               <svg class="input-icon icon-user">
                 <use href="images/icons.svg#icon-close-black"></use>
               </svg>
