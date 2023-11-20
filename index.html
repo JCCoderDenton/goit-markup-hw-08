@@ -38,7 +38,8 @@
           <li>
             <a href="mailto:info@devstudio.com" aria-label="info@devstudio.com">
               <svg class="icon-mail">
-                <use href="images/icons.svg#icon-envelope"></use></svg>
+                <use href="images/icons.svg#icon-envelope"></use>
+              </svg>
               <span>info@devstudio.com</span>
             </a>
           </li>
@@ -56,28 +57,32 @@
             <use href="images/icons.svg#icon-menu_mobal"></use>
           </svg>
         </button>
-      </div>
-      <div class="menu-mobile" js-menu-container>
-        <button js-close-menu class="menu-mobile__button-close"> 
-          <svg class="input-icon icon-user">
-            <use href="images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        <ul class="menu-mobile__nav">
-          <li><a href="index.html">Студія</a></li>
-          <li><a href="portfolio.html">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
-        </ul>
-        <ul class="menu-mobile__contact">
-          <li><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
-          <li><a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a></li>
-        </ul>
-        <ul class="menu-mobile__social">
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">LinkedIn</a></li>
-        </ul>
+        <div js-menu-container class="menu-mobile">
+          <button js-close-menu class="menu-mobile__button-close">
+            <svg class="input-icon icon-user">
+              <use href="images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="menu-mobile__nav">
+            <li><a href="index.html">Студія</a></li>
+            <li><a href="portfolio.html">Портфоліо</a></li>
+            <li><a href="">Контакти</a></li>
+          </ul>
+          <ul class="menu-mobile__contact">
+            <li><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-mobile__social">
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -99,12 +104,13 @@
             <button data-modal-close class="center-overlay-close">
               <svg class="input-icon icon-user">
                 <use href="images/icons.svg#icon-close-black"></use>
-              </svg></button
-            >
+              </svg>
+            </button>
             <div class="center-overlay__input">
               <h2>Залиште свої дані, ми вам передзвонимо</h2>
               <form class="center-overlay__input">
-                <label for="name" class="center-overlay__name-label">Ім'я
+                <label for="name" class="center-overlay__name-label"
+                  >Ім'я
                   <input
                     class="center-overlay__name-label-input"
                     type="text"
@@ -115,7 +121,8 @@
                     <use href="images/icons.svg#icon-person"></use>
                   </svg>
                 </label>
-                <label for="number" class="center-overlay__name-label">Телефон
+                <label for="number" class="center-overlay__name-label"
+                  >Телефон
                   <input
                     class="center-overlay__name-label-input"
                     type="text"
@@ -126,7 +133,8 @@
                     <use href="images/icons.svg#icon-phone-black"></use>
                   </svg>
                 </label>
-                <label for="email" class="center-overlay__name-label">Пошта
+                <label for="email" class="center-overlay__name-label"
+                  >Пошта
                   <input
                     class="center-overlay__name-label-input"
                     type="text"
@@ -137,20 +145,37 @@
                     <use href="images/icons.svg#icon-email-black"></use>
                   </svg>
                 </label>
-                <label class="center-overlay__name-label-comment comment" for="comment">Коментар<textarea name="comment" id="comment" placeholder="Введіть текст"></textarea></label>
+                <label
+                  class="center-overlay__name-label-comment comment"
+                  for="comment"
+                  >Коментар<textarea
+                    name="comment"
+                    id="comment"
+                    placeholder="Введіть текст"
+                  ></textarea>
+                </label>
                 <label class="form-check" for="check">
-                  <input type="checkbox" class="checkbox visually-hidden" id="check" name="check"     />
+                  <input
+                    type="checkbox"
+                    class="checkbox visually-hidden"
+                    id="check"
+                    name="check"
+                  />
                   <span class="custom-checkbox">
                     <svg class="custom-checkbox-icon">
                       <use href="images/icons.svg#icon-check"></use>
                     </svg>
                   </span>
                 </label>
-                <label class="center-overlay__name-label-comment check-text" for="check"
+                <label
+                  class="center-overlay__name-label-comment check-text"
+                  for="check"
                   >Погоджуюся з розсилкою та приймаю
                   <a href="#" target="_blank">Умови договору</a></label
                 >
-                <button class="center-overlay__input-button" type="submit">Відправити</button>
+                <button class="center-overlay__input-button" type="submit">
+                  Відправити
+                </button>
               </form>
             </div>
           </div>
@@ -305,7 +330,7 @@
                 <ul class="socials">
                   <li class="social">
                     <a class="social__icon-bg user-social-icon-bg" href="">
-                      <svg  class="instagram-icon">
+                      <svg class="instagram-icon">
                         <use href="images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -335,10 +360,7 @@
               </div>
             </li>
             <li class="team-block">
-              <img
-                src="images/worker_3.jpg"
-                alt="Marketing Микола Тарасов"
-              />
+              <img src="images/worker_3.jpg" alt="Marketing Микола Тарасов" />
               <div class="workers__user">
                 <h3>Микола Тарасов</h3>
                 <p>Marketing</p>
@@ -488,7 +510,9 @@
                 >
               </li>
               <li>
-                <a class="bottomline__left-contact-colour-grey" href="tel:+380961111111"
+                <a
+                  class="bottomline__left-contact-colour-grey"
+                  href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -530,21 +554,21 @@
         </div>
         <form class="bottomline__right">
           <label class="bottomline__right-label">Підпишіться на розсилку</label>
-            <div>
-              <input
-                class="bottomline__right-name-label"
-                type="text"
-                placeholder="E-mail"
-                id="footer-email"
-                name="footer-email"
-              />
-              <button class="bottomline__right-input-button" type="submit">
-                Підписатися
-                <svg width="24" height="24">
-                  <use href="images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+          <div>
+            <input
+              class="bottomline__right-name-label"
+              type="text"
+              placeholder="E-mail"
+              id="footer-email"
+              name="footer-email"
+            />
+            <button class="bottomline__right-input-button" type="submit">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
