@@ -52,14 +52,14 @@
             >
           </li>
         </ul>
-        <button js-open-menu class="menu-mobile__button-open">
+        <button data-js-open-menu class="menu-mobile__button-open">
           <svg>
             <use href="images/icons.svg#icon-menu_mobal"></use>
           </svg>
         </button>
       </div>
-      <div js-menu-container class="menu-mobile">
-        <button js-close-menu class="menu-mobile__button-close">
+      <div data-js-menu-container class="menu-mobile">
+        <button data-js-close-menu class="menu-mobile__button-close">
           <svg class="input-icon icon-user">
             <use href="images/icons.svg#icon-close-black"></use>
           </svg>
@@ -90,7 +90,7 @@
         <div class="container center__image flex-column-center">
           <h1 class="center__title">Ефективні рішення для вашого бізнесу</h1>
           <button
-          js-open-menu
+            data-modal-open
             id="modal-button"
             class="center-button"
             type="button"
@@ -99,9 +99,9 @@
           </button>
         </div>
         <!--Modal-->
-        <div class="center-overlay" js-menu-container>
+        <div class="center-overlay" data-modal>
           <div class="center-overlay__popup">
-            <button js-close-menu class="center-overlay-close">
+            <button data-modal-close class="center-overlay-close">
               <svg class="input-icon icon-user">
                 <use href="images/icons.svg#icon-close-black"></use>
               </svg>
