@@ -37,7 +37,8 @@
           <li>
             <a href="mailto:info@devstudio.com" aria-label="info@devstudio.com">
               <svg class="icon-mail">
-                <use href="images/icons.svg#icon-envelope"></use></svg>
+                <use href="images/icons.svg#icon-envelope"></use>
+              </svg>
               <span>info@devstudio.com</span>
             </a>
           </li>
@@ -50,26 +51,30 @@
             >
           </li>
         </ul>
-        <button js-open-menu class="menu-mobile__button-open">
+        <button data-js-open-menu class="menu-mobile__button-open">
           <svg>
             <use href="images/icons.svg#icon-menu_mobal"></use>
           </svg>
         </button>
       </div>
-      <div class="menu-mobile" js-menu-container>
-        <button js-close-menu class="menu-mobile__button-close"> 
+      <div data-js-menu-container class="menu-mobile">
+        <button data-js-close-menu class="menu-mobile__button-close">
           <svg class="input-icon icon-user">
             <use href="images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
         <ul class="menu-mobile__nav">
-          <li><a href="index.html">Студія</a></li>
-          <li><a href="portfolio.html">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
+          <li><a href="index.html" class="menu-mobile__nav--button">Студія</a></li>
+          <li><a href="portfolio.html" class="menu-mobile__nav--button" aria-current="page">Портфоліо</a></li>
+          <li><a href="" class="menu-mobile__nav--button">Контакти</a></li>
         </ul>
         <ul class="menu-mobile__contact">
           <li><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
-          <li><a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mail"
+              >info@devstudio.com</a
+            >
+          </li>
         </ul>
         <ul class="menu-mobile__social">
           <li><a href="">Instagram</a></li>
@@ -90,7 +95,7 @@
             <li><button type="button">Маркетинг</button></li>
           </ul>
           <ul class="main__pic-list flex-list-warp">
-            <li class="main__pic-list-block">
+            <li class="main__pic-list-block first-element">
               <a class="main__pic-list-container" href="#">
                 <img
                   src="images/project_1.jpg"
@@ -106,7 +111,7 @@
                 </div>
               </a>
             </li>
-            <li class="main__pic-list-block">
+            <li class="main__pic-list-block second-element">
               <a class="main__pic-list-container" href="#">
                 <img
                   src="images/project_2.jpg"
@@ -240,7 +245,7 @@
     </main>
     <footer class="bottomline">
       <div class="container bottomline__left">
-        <div>
+        <div class="bottomline__left-first">
           <a href="" class="bottomline__left-button logo">Studio</a>
           <address>
             <ul class="bottomline__left-contact">

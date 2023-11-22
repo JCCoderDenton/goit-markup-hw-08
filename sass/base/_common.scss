@@ -54,15 +54,18 @@ body {
   }
 
   .section {
+
     padding: 94px 0;
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding: 60px 0;
+      display: flex;
+      justify-content: center;
     }
   }
 
   .section-workers {
     padding: 94px 0;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1199px) {
         display: none;
     }
   }
