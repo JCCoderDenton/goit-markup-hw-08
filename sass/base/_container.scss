@@ -11,8 +11,10 @@
       width: 738px;
       margin: 0;
     }
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
+    @media screen and (min-width: 1200px) and (max-width: 1229px) {
+      width: auto;
     }
-      
+    @media screen and (min-width: 1230px) {
+      width: 1200px;
+    }  
   }

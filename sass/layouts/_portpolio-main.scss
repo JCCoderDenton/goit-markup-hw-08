@@ -63,12 +63,13 @@
     margin: 0;
     & a {
       border-radius: 0px 0px 4px 4px;
-      display: block;
       width: 370px;
       background: var(--white-color);
       transition-duration: 250ms;
       transition-property: box-shadow;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      flex-wrap: wrap;
       &:hover ,
       &:focus {
         box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);  
@@ -112,7 +113,8 @@
       margin: 0;
       padding: 0;
     }
-    & li a .inblock {
+    & li .inblock {
+      flex-grow: 1;  
       border-bottom: 1px solid #eee;
       border-left: 1px solid #eee;
       border-right: 1px solid #eee;
@@ -220,14 +222,15 @@
     letter-spacing: 0.54px;
     @media screen and (min-width: 320px) and (max-width: 767px) {
       font-size: 14px;
+      padding: 34px 24px;
     }
   }
 
 
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .first-element a .inblock{     
-      padding-bottom: 60px;
+    .first-element .inblock{
+      height: 94px;
     }
     .second-element h3{
       width: 246px;

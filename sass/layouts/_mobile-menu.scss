@@ -1,6 +1,6 @@
 .menu-mobile{
     width: 100%;
-    height:100vh;
+    height: 100vh;
     position: fixed;
     background: rgb(255, 255, 255);
     top: 0;
@@ -39,7 +39,15 @@
     & svg{
         height: 40px;
         width: 40px;
+        transition-duration: 250ms;
+        transition-property: fill;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+}
+
+.menu-mobile__button-open:hover svg,
+.menu-mobile__button-open:focus svg{
+  fill: var(--main-color);
 }
 .menu-mobile__button-close{
     top: 8px;
@@ -52,6 +60,9 @@
     & svg{
         height: 40px;
         width: 40px;
+        transition-duration: 250ms;
+        transition-property: fill;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 .menu-mobile__button-close:hover svg,
@@ -67,10 +78,14 @@ fill: var(--main-color);
     line-height: normal;
     letter-spacing: 0.8px;
     padding-left: 30px;
-    @media screen and (mi: 768px) {
+    @media screen and (min-width: 320px) and (max-width: 400px)  {
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    @media screen and (min: 768px) {
         display: none;
     }
-    margin-bottom: 20vh;
+    margin-bottom: 40vh;
     
     & li {
         list-style-type: none;
@@ -98,6 +113,10 @@ fill: var(--main-color);
     letter-spacing: 0.8px;
     margin-bottom: 64px;
     padding-left: 30px;
+    @media screen and (min-width: 320px) and (max-width: 400px)  {
+        margin-bottom: 30px;
+        padding-left: 15px;
+    }
     & li {
         list-style-type: none;
         margin-bottom: 32px;
@@ -106,11 +125,17 @@ fill: var(--main-color);
         color: var(--main-color);
         text-decoration: none;
         font-size: 40px;
+        @media screen and (min-width: 320px) and (max-width: 400px)  {
+            font-size: 30px;
+        }
     }
     & li .mail {
         color: var(--white-grey-color);
         text-decoration: none;
         font-size: 24px;
+        @media screen and (min-width: 320px) and (max-width: 400px)  {
+            font-size: 20px;
+        }
     }
 }
 
@@ -123,6 +148,9 @@ fill: var(--main-color);
     line-height: 22px;
     letter-spacing: 0.36px;
     padding-left: 30px;
+    @media screen and (min-width: 320px) and (max-width: 400px)  {
+        padding-left: 15px;
+    }
 
     & li {
         list-style-type: none;

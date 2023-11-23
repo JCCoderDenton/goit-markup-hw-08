@@ -9,6 +9,8 @@ body {
 
   img {
     display: block;
+    max-width: 100%;
+    height: auto;
   }
   
   h2 {
@@ -26,7 +28,7 @@ body {
   
   .one-tab {
     padding: 94px 0 0 0;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1599px) {
       padding: 60px 0;
     }
   }
@@ -61,11 +63,14 @@ body {
       display: flex;
       justify-content: center;
     }
+    @media screen and (min-width: 1200px) and (max-width: 1599px) {
+      padding: 60px 0;
+    }
   }
 
   .section-workers {
     padding: 94px 0;
-      @media screen and (max-width: 1199px) {
+      @media screen and (max-width: 1599px) {
         display: none;
     }
   }
