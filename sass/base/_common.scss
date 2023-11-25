@@ -28,7 +28,9 @@ body {
   
   .one-tab {
     padding: 94px 0 0 0;
-    @media screen and (max-width: 1599px) {
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1199px) {
       padding: 60px 0;
     }
   }
@@ -58,7 +60,7 @@ body {
   .section {
 
     padding: 94px 0;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
       padding: 60px 0;
       display: flex;
       justify-content: center;
@@ -70,7 +72,7 @@ body {
 
   .section-workers {
     padding: 94px 0;
-      @media screen and (max-width: 1599px) {
+      @media screen and (max-width: 1199px) {
         display: none;
     }
   }

@@ -51,8 +51,14 @@ h2 {
 
 .one-tab {
   padding: 94px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .one-tab {
     padding: 60px 0;
   }
@@ -104,7 +110,7 @@ h2 {
 .section {
   padding: 94px 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .section {
     padding: 60px 0;
     display: -webkit-box;
@@ -124,7 +130,7 @@ h2 {
 .section-workers {
   padding: 94px 0;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .section-workers {
     display: none;
   }
@@ -534,7 +540,7 @@ h2 {
   line-height: normal;
   letter-spacing: 0.8px;
   padding-left: 30px;
-  margin-bottom: 40vh;
+  margin-bottom: 35vh;
 }
 @media screen and (min-width: 320px) and (max-width: 400px) {
   .menu-mobile__nav {
@@ -993,34 +999,34 @@ h2 {
   padding: 0;
   width: 100%;
   height: 600px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-pc.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-pc.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .center__image {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image@2.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image@2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-pc@2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-pc@2.jpg");
   }
 }
 @media screen and (min-width: 1600px) {
   .center__image {
     width: 1600px;
     height: 600px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image.jpg");
-    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-pc.jpg");
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-pc.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 @media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
   .center__image {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image@2.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image@2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-pc@2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-pc@2.jpg");
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .center__image {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-tablet.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-tablet.jpg");
@@ -1031,27 +1037,27 @@ h2 {
     background-position: center;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx) {
   .center__image {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-tablet@2.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-tablet@2.jpg");
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .center__image {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-tablet.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-mobile.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-mobile.jpg");
     width: 100%;
     height: 400px;
-    background-size: 768px 500px;
+    background-size: 768px 400px;
     background-repeat: no-repeat;
     background-position: center;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .center__image {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-tablet@2.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-tablet@2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-mobile@2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-mobile@2.jpg");
   }
 }
 
@@ -1199,7 +1205,7 @@ h2 {
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .center-overlay__name-label-input {
-    height: 20px;
+    height: 30px;
   }
 }
 
@@ -1212,7 +1218,7 @@ h2 {
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .center-overlay__name-label > .input-icon {
-    top: 28px;
+    top: 33px;
   }
 }
 
@@ -1670,7 +1676,12 @@ h2 {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1229px) {
+  .content-list li:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1230px) {
   .content-list li:not(:last-child) {
     margin-right: 30px;
   }
@@ -1912,7 +1923,7 @@ h2 {
   fill: #AFB1B8;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-icons__div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1960,7 +1971,7 @@ h2 {
         flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-icons ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1968,7 +1979,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-icons li {
     width: 226px;
   }
@@ -1978,7 +1989,12 @@ h2 {
     width: 208px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) and (max-width: 1229px) {
+  .section-icons li:not(:last-child) {
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1230px) {
   .section-icons li:not(:last-child) {
     margin-right: 30px;
   }
@@ -1996,7 +2012,7 @@ h2 {
     margin-right: 30px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-icons li:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
   }
@@ -2028,7 +2044,7 @@ h2 {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-icons li a {
     width: 226px;
   }
