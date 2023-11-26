@@ -17,9 +17,24 @@
       (min-resolution: 2dppx){
         background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/bg-image-pc@2.jpg");
       }
+
     @media screen and (min-width: 1600px) {
-      width: 1600px;
+        width: 1600px;
+        height: 600px;
+        background-size: cover;
+        background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/bg-image-pc.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+          background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/bg-image-pc@2.jpg");
+        }
+      }
+    @media screen and (min-width: 1200px)and (max-width: 1599px) {
+      width: 100%;
       height: 600px;
+      background-size: cover;
       background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/bg-image-pc.jpg");
       background-repeat: no-repeat;
       background-position: center;
@@ -29,7 +44,8 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/bg-image-pc@2.jpg");
       }
     }
-    @media screen and (min-width: 768px) and (max-width: 1599px)  {
+
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
       background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/bg-image-tablet.jpg");
       width: 100%;
       height: 400px;
